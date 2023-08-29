@@ -26,5 +26,10 @@ jobs:
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
       
-    # - name: Run Test
-    #   run: php artisan test
+  laravel-advanced-tests:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Run Test
+      run: php artisan test
